@@ -1,0 +1,104 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    text-align: center;
+    background-color: #fef8bb;
+    color:#001F54;
+}
+
+.acme-regular {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @keyframes glow{
+  from{
+      text-shadow:0px 0px 5px #f4bcfc,0px 0px 10px #e249fa,0px 0px 20px rgb(203, 60, 225)
+  }
+  to{
+    text-shadow:0px 0px 5px #b018c7,0px 0px 10px #DE06FF,0px 0px 20px #F40076
+  }
+}
+
+.heading{
+    font-size:2.7rem;
+    padding:1rem;
+    color:#fef5ff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+.choices{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:220px;
+    gap:1rem;
+}
+
+.choice img{
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    object-fit: cover; /* To keep the image proper as when we set width and height, the image either looks stretched or looks compact*/
+    cursor: pointer;
+    
+
+}
+
+.choice img:hover{
+    box-shadow: 0px 0px 15px #1300a3;
+}
+
+.choice-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    font-size: 1.3rem;
+}
+
+#user-score,#comp-score{
+    font-size: 1.9rem;
+}
+
+.side{
+    display: flex;
+    gap:0.4rem;
+}
+
+.message-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 6rem;
+    
+}
+
+@keyframes blue-glow{
+from{
+text-shadow: 0px 0px 10px rgb(30, 30, 244),0px 0px 15px  rgb(88, 88, 242), 0px 0px 30px rgb(25, 25, 185)
+}
+to{
+    text-shadow: 0px 0px 10px rgb(0, 0, 137),0px 0px 15px  rgb(0, 0, 250),0px 0px 30px  rgb(3, 3, 139)
+}
+}
+
+#msg{
+    color:rgb(254, 254, 255);
+    font-size: 2.4rem;
+    animation: blue-glow 1s ease-in-out infinite alternate;
+}

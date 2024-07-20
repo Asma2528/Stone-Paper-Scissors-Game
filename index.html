@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper and Scissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body class="acme-regular ">
+    <div class="container">
+        <h1 class="heading">Lets Play Rock, Paper, Scissors!</h1>
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.jpg" alt="rock" >
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.jpg" alt="paper" >
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./images/scissor.jpg" alt="scissors">
+            </div>
+        </div>
+        <div class="choice-display">
+            <div class="side">
+                <p class="user">You selected: </p>
+                <p id="user-choice"> </p>
+            </div>
+            <div class="side">
+                <p class="comp">Computer selected: </p>
+                <p id="comp-choice"> </p>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <div>
+                <p id="user-score">0</p>
+                <p class="user">You</p>
+            </div>
+            <div>
+                <p id="comp-score">0</p>
+                <p class="comp">Computer</p>
+            </div>
+        </div>
+        <div class="message-container">
+            <p id="msg">Play your move</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
